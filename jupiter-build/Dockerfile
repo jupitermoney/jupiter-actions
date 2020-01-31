@@ -1,4 +1,5 @@
 FROM alpine
 
-ARG BASE_IMAGE=openjdk-${INPUT_JAVA_VERSION}-jdk
-RUN echo $BASE_IMAGE
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
