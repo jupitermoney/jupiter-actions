@@ -2,4 +2,6 @@
 
 pwd
 cd /
+ls
+
 ./build.sh
