@@ -1,7 +1,7 @@
 name: "Run Build and Test"
 description: "Runs a gradle build along with any migrations using flyway"
 inputs:
-  java_version:
+  JAVA_VERSION:
     description: "The version of Java to run on."
     required: true
     default: '8'
@@ -9,4 +9,4 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.java_version }}
+    - ${{ inputs.JAVA_VERSION }}
