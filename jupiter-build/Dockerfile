@@ -1,8 +1,8 @@
 FROM alpine
 
-COPY entrypoint.sh /entrypoint.sh
-COPY build.sh /build.sh
+COPY entrypoint.sh ${GITHUB_WORKSPACE}/entrypoint.sh
+COPY build.sh ${GITHUB_WORKSPACE}/build.sh
 
 RUN pwd
 
-ENTRYPOINT /entrypoint.sh
+ENTRYPOINT ${GITHUB_WORKSPACE}/entrypoint.sh
