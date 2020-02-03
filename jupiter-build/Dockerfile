@@ -8,4 +8,4 @@ COPY build.sh ${GITHUB_WORKSPACE}/build.sh
 RUN pwd
 RUN echo ${GITHUB_WORKSPACE}
 
-ENTRYPOINT entrypoint.sh
+ENTRYPOINT ${GITHUB_WORKSPACE}/entrypoint.sh
