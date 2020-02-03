@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
-echo "Hello 1 ${JAVA_VERSION}"
+echo "Hello 1 ${INPUT_JAVAVERSION}"
 
-apk add openjdk${JAVA_VERSION}
+apk add openjdk${INPUT_JAVAVERSION}
