@@ -4,7 +4,6 @@ inputs:
   java_version:
     description: "The version of Java to run on."
     required: true
-    default: '8'
 runs:
   using: "docker"
   image: "Dockerfile"
