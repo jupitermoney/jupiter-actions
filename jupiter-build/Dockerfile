@@ -1,6 +1,6 @@
 FROM alpine
 
-COPY entrypoint.sh /entrypoint.sh
-COPY build.sh /build.sh
+COPY entrypoint.sh .
+COPY build.sh .
 
-ENTRYPOINT /entrypoint.sh
+ENTRYPOINT entrypoint.sh
