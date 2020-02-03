@@ -5,4 +5,4 @@ COPY build.sh ${GITHUB_WORKSPACE}/build.sh
 
 RUN pwd
 
-ENTRYPOINT ${GITHUB_WORKSPACE}/entrypoint.sh
+ENTRYPOINT entrypoint.sh
