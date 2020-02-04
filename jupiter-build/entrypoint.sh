@@ -4,7 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 echo "Setting up docker installation"
 apt update
-apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 bash -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu disco stable" > /etc/apt/sources.list.d/docker-ce.list'
 
 apt update
