@@ -15,7 +15,7 @@ java -version
 docker -v
 
 echo "Starting postgres server"
-docker run postgres:10.10 -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres -e POSTGRES_USER=postgres -p 5432:5432  &
+docker run -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:10.10 &
 
 echo 'Running gradle build.'
 
