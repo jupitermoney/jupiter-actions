@@ -2,9 +2,7 @@
 
 pwd
 
-echo $JAVA_HOME
-
-echo $PATH
+apk add openjdk${INPUT_JAVA_VERSION}-jdk
 
 java -version
 
