@@ -1,4 +1,4 @@
-FROM ubuntu:19.10
+FROM ubuntu:19.04
 
 COPY entrypoint.sh /entrypoint.sh
 

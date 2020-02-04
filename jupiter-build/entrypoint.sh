@@ -2,8 +2,6 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
-bash -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu disco stable" > /etc/apt/sources.list.d/docker-ce.list'
-
 apt update
 apt-get -y install openjdk-${INPUT_JAVA_VERSION}-jdk-headless docker-ce
 
