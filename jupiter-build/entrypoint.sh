@@ -20,7 +20,7 @@ docker run -d -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres -e POSTGRES_
 docker ps -a
 iptables -L
 
-# export PGPASSWORD='password'; psql -U postgres -d postgres -h localhost -p 5432
+export PGPASSWORD='password'; psql -U postgres -d postgres -h localhost -p 5432
 
 echo 'Running gradle build.'
 # ./gradlew --info --rerun-tasks clean flywayClean flywayMigrate build;
