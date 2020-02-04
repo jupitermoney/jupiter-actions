@@ -2,8 +2,6 @@
 
 pwd
 
-cp /build.sh /github/workspace/build.sh
+echo 'Running gradle build.'
 
-ls -al
-
-./build.sh
+./gradlew --info --rerun-tasks clean flywayClean flywayMigrate build;
