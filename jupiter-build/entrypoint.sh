@@ -7,7 +7,7 @@ apt-get -y install openjdk-${INPUT_JAVA_VERSION}-jdk-headless postgresql-11
 
 java -version
 
-sudo su postgres
+su - postgres
 
 echo 'Running gradle build.'
 
