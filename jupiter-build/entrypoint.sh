@@ -1,7 +1,6 @@
 #!/bin/sh -l
 
-pwd
-
+apt update
 apt install openjdk-${INPUT_JAVA_VERSION}-jdk
 
 java -version
