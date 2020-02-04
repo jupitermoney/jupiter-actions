@@ -1,7 +1,9 @@
 #!/bin/sh -l
 
+export DEBIAN_FRONTEND=noninteractive
+
 apt update
-apt install openjdk-${INPUT_JAVA_VERSION}-jdk
+apt-get -y install openjdk-${INPUT_JAVA_VERSION}-jdk
 
 java -version
 
