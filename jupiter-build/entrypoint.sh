@@ -3,7 +3,7 @@
 export DEBIAN_FRONTEND=noninteractive
 
 apt update
-apt-get -y install openjdk-${INPUT_JAVA_VERSION}-jdk-headless docker-ce-cli
+apt-get -y install openjdk-${INPUT_JAVA_VERSION}-jdk-headless docker
 
 java -version
 docker -v
