@@ -7,6 +7,8 @@ apt-get -y install openjdk-${INPUT_JAVA_VERSION}-jdk-headless postgresql-11
 
 java -version
 
+sudo su postgres
+
 echo 'Running gradle build.'
 
 ./gradlew --info --rerun-tasks clean flywayClean flywayMigrate build;
