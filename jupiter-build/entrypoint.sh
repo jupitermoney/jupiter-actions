@@ -3,7 +3,7 @@
 export DEBIAN_FRONTEND=noninteractive
 
 apt update
-apt-get -y install openjdk-${INPUT_JAVA_VERSION}-jdk
+apt-get -y install openjdk-${INPUT_JAVA_VERSION}-jdk-headless postgres:10.10
 
 java -version
 
