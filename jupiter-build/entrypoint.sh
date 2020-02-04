@@ -2,7 +2,7 @@
 
 pwd
 
-apt install openjdk${INPUT_JAVA_VERSION}-jdk
+apt install openjdk-${INPUT_JAVA_VERSION}-jdk
 
 java -version
 
