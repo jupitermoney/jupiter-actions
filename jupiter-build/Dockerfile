@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM ubuntu:19.04
 
 COPY entrypoint.sh /entrypoint.sh
 
