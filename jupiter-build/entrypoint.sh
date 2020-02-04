@@ -18,8 +18,8 @@ echo "Starting postgres server"
 docker run -d -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres -e POSTGRES_USER=postgres -p 5432:5432 postgres:10.10
 
 docker ps -a
-netstat -tulpn
-ifconfig
+cat /etc/hosts
+
 # export PGPASSWORD='password'; psql -U postgres -d postgres -h localhost -p 5432
 
 echo 'Running gradle build.'
