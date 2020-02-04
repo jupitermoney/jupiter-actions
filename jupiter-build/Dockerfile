@@ -1,4 +1,4 @@
-FROM openjdk8
+FROM openjdk:8
 
 COPY entrypoint.sh /entrypoint.sh
 
