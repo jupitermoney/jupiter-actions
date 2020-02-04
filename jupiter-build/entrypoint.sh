@@ -4,4 +4,6 @@ pwd
 
 cp /build.sh /github/workspace/build.sh
 
+ls -al
+
 ./build.sh
